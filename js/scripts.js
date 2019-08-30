@@ -23,6 +23,12 @@ $(document).ready(function() {
     $("#orderCard").addClass("pizza")
     $(".output").show();
   });
+  $("#reset").click(function() {
+    $("#order").trigger("reset");
+    $("#orderCard").removeClass("pizza");
+    $("#chosen-toppings").text("");
+    $(".output").hide();
+  });
 
 });
 
