@@ -4,6 +4,11 @@ $(document).ready(function() {
     event.preventDefault();
     var size = $("#size").val();
     console.log(size);
+    toppings = [];
+    $("input:checkbox[name=toppings]:checked").each(function(){
+      toppings.push($(this).val());
+    });
+    console.log(toppings);
 
   });
 
