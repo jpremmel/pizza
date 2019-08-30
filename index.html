@@ -5,11 +5,22 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Order Pizza</title>
+    <title>Price Your Pizza</title>
   </head>
   <body>
     <div class="container">
-      
+      <h1>Price Your Pizza</h1>
+      <form id="order">
+        <label for="size">Select Your Pizza Size:</label>
+        <select class="form-control" id="size">
+          <option>Personal</option>
+          <option>Small</option>
+          <option>Medium</option>
+          <option>Large</option>
+          <option>Extra Large</option>
+        </select>
+        <button type="submit" class="btn btn-danger">Calculate Price</button>
+      </form>
     </div>
   </body>
 </html>
