@@ -1,4 +1,9 @@
 
+.important {
+  color: #dc3545;
+  font-variant: small-caps;
+}
+
 button {
   width: 130px;
   margin-top: 10px;
@@ -28,6 +33,7 @@ button {
 #header {
   width: 75%;
   text-align: center;
+  font-variant: small-caps;
   margin-bottom: 20px;
 }
 

@@ -15,7 +15,7 @@ function displayToppings(toppings) {
 
 function additionalPizza(Pizza) {
   var nextPizzaToppingsHtml = displayToppings(Pizza.toppings);
-  return nextPizzaHtml = "<div class=\"pizza card\"><h3>" + Pizza.size + " Pizza:</h3><p><strong>Toppings:</strong></p><ul>" + nextPizzaToppingsHtml + "</ul><p><strong>Price:</strong> $" + Pizza.price + "</p></div>";
+  return nextPizzaHtml = "<div class=\"pizza card\"><h3><span class=\"important\">" + Pizza.size + "</span> Pizza:</h3><p><strong>Toppings:</strong></p><ul>" + nextPizzaToppingsHtml + "</ul><p><strong>Price:</strong> $" + Pizza.price + "</p></div>";
 }
 
 $(document).ready(function() {

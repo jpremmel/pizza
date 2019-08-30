@@ -10,13 +10,13 @@
   <body>
     <div class="container">
       <div class="card" id="header">
-        <h1>Weirdough Pizza</h1>
+        <h1>Weir<span class="important">dough</span> Pizza</h1>
       </div>
       <div class="row">
         <div class="col">
           <div class="card" id="orderCard">
             <form id="order">
-              <label for="size"><strong>Select Your Pizza Size:</strong></label>
+              <label for="size"><strong>Select Your Pizza <span class="important">Size</span>:</strong></label>
               <select class="form-control" id="size">
                 <option value="Personal">Personal ($5)</option>
                 <option value="Small">Small ($8)</option>
@@ -26,7 +26,7 @@
               </select>
               <br>
               <div class="form-group">
-                <p><strong>Select Your Toppings ($1 each):</strong></p>
+                <p><strong>Select Your Pizza <span class="important">Toppings</span></strong> ($1 each):</p>
                 <input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni<br>
                 <input type="checkbox" name="toppings" value="Sausage"> Sausage<br>
                 <input type="checkbox" name="toppings" value="Chicken"> Chicken<br>
@@ -52,14 +52,14 @@
         </div>
         <div class="col output">
           <div class="pizza card">
-            <h3><span id="chosen-size"></span> Pizza:</h3>
+            <h3><span class="important" id="chosen-size"></span> Pizza:</h3>
             <p><strong>Toppings:</strong></p>
               <ul id="chosen-toppings"></ul>
             <p><strong>Price:</strong> $<span id="price"></span></p>
           </div>
           <div class="additionalPizza"></div>
           <div class="card">
-            <h3>Total Price: $<span id="total-price"></span></h3>
+            <h3><span class="important">Total Price:</span> $<span id="total-price"></span></h3>
           </div>
         </div>
       </div>
