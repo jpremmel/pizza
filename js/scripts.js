@@ -12,6 +12,7 @@ $(document).ready(function() {
     $("#chosen-size").text(customerPizza.size);
     $("#chosen-toppings").text(customerPizza.toppings);
     $("#price").text(customerPrice);
+    $("#orderCard").addClass("pizza")
     $(".output").show();
   });
 
