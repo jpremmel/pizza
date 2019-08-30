@@ -1,6 +1,6 @@
 # _Weirdough Pizza_
 
-#### _A simulated pizza price calculator, 30 Aug 2019_
+#### _A fictional pizza price calculator, 30 Aug 2019_
 
 #### By _**Jacqueline Remmel**_
 
@@ -13,7 +13,7 @@
 | The program displays information for multiple pizza selections and keeps a running price total | A $5 pizza is selected and a $20 pizza is selected | "Total Price: $25" |
 | The pizza selection form and any saved pizza info clears when the form resets | Click "Reset" | Pizza form empties and total price resets to $0 |
 
-_This webpage calculates a pizza's price based on the user's designated pizza size and toppings. The main purpose of this project was to practice object constructors and prototype methods in JavaScript._
+_This webpage calculates a fictional pizza order price based on the user's designated pizza size and toppings. The main purpose of this project was to practice object constructors and prototype methods in JavaScript._
 
 ## Setup/Installation Requirements
 
