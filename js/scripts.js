@@ -46,6 +46,7 @@ $(document).ready(function() {
     $("#order").trigger("reset");
     $("#orderCard").removeClass("pizza");
     $("#chosen-toppings").text("");
+    $(".additionalPizza").text("");
     $(".output").hide();
   });
 
