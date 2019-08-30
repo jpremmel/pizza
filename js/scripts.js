@@ -1,9 +1,13 @@
 //FRONT END//
 function displayToppings(toppings) {
   var toppingsHtml = "";
-  toppings.forEach(function(topping) {
-    toppingsHtml += "<li>" + topping + "</li>";
-  });
+  if (toppings.length) {
+    toppings.forEach(function(topping) {
+      toppingsHtml += "<li>" + topping + "</li>";
+    });
+  } else {
+    toppingsHtml = "<li>Cheese only</li>"
+  }
   return toppingsHtml;
 }
 
