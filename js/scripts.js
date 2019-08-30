@@ -3,12 +3,10 @@ $(document).ready(function() {
   $("#order").submit(function(event) {
     event.preventDefault();
     var size = $("#size").val();
-    console.log(size);
     toppings = [];
     $("input:checkbox[name=toppings]:checked").each(function(){
       toppings.push($(this).val());
     });
-    console.log(toppings);
     var customerPizza = new Pizza(size, toppings);
     var customerPrice = customerPizza.calcPrice();
     $("#chosen-size").text(customerPizza.size);

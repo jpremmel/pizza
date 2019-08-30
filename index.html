@@ -9,44 +9,50 @@
   </head>
   <body>
     <div class="container">
-      <h1>Price Your Pizza</h1>
-      <form id="order">
-        <label for="size">Select Your Pizza Size:</label>
-        <select class="form-control" id="size">
-          <option value="Personal">Personal ($5)</option>
-          <option value="Small">Small ($8)</option>
-          <option value="Medium">Medium ($12)</option>
-          <option value="Large">Large ($16)</option>
-          <option value="Extra Large">Extra Large ($20)</option>
-        </select>
-        <div class="form-group">
-          <p>Select Your Toppings ($1 each):</p>
-          <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni<br>
-          <input type="checkbox" name="toppings" value="sausage"> Sausage<br>
-          <input type="checkbox" name="toppings" value="chicken"> Chicken<br>
-          <input type="checkbox" name="toppings" value="meatballs"> Meatballs<br>
-          <input type="checkbox" name="toppings" value="bacon"> Bacon<br>
-          <input type="checkbox" name="toppings" value="canadian"> Canadian Bacon<br>
-          <input type="checkbox" name="toppings" value="mushrooms"> Mushrooms<br>
-          <input type="checkbox" name="toppings" value="onions"> Onions<br>
-          <input type="checkbox" name="toppings" value="olives"> Olives<br>
-          <input type="checkbox" name="toppings" value="broccoli"> Broccoli<br>
-          <input type="checkbox" name="toppings" value="spinach"> Spinach<br>
-          <input type="checkbox" name="toppings" value="basil"> Basil<br>
-          <input type="checkbox" name="toppings" value="arugula"> Arugula<br>
-          <input type="checkbox" name="toppings" value="artichoke"> Artichoke<br>
-          <input type="checkbox" name="toppings" value="pineapple"> Pineapple<br>
-          <input type="checkbox" name="toppings" value="bell-pepper"> Bell Pepper<br>
-          <input type="checkbox" name="toppings" value="garlic"> Garlic<br>
-        </div>
-        <button type="submit" class="btn btn-danger">Calculate Price</button>
-      </form>
+      <div class="card">
+        <h1>Price Your Pizza</h1>
+      </div>
+      <div class="card">
+        <form id="order">
+          <label for="size">Select Your Pizza Size:</label>
+          <select class="form-control" id="size">
+            <option value="Personal">Personal ($5)</option>
+            <option value="Small">Small ($8)</option>
+            <option value="Medium">Medium ($12)</option>
+            <option value="Large">Large ($16)</option>
+            <option value="Extra Large">Extra Large ($20)</option>
+          </select>
+          <div class="form-group">
+            <p>Select Your Toppings ($1 each):</p>
+            <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni<br>
+            <input type="checkbox" name="toppings" value="sausage"> Sausage<br>
+            <input type="checkbox" name="toppings" value="chicken"> Chicken<br>
+            <input type="checkbox" name="toppings" value="meatballs"> Meatballs<br>
+            <input type="checkbox" name="toppings" value="bacon"> Bacon<br>
+            <input type="checkbox" name="toppings" value="canadian"> Canadian Bacon<br>
+            <input type="checkbox" name="toppings" value="mushrooms"> Mushrooms<br>
+            <input type="checkbox" name="toppings" value="onions"> Onions<br>
+            <input type="checkbox" name="toppings" value="olives"> Olives<br>
+            <input type="checkbox" name="toppings" value="broccoli"> Broccoli<br>
+            <input type="checkbox" name="toppings" value="spinach"> Spinach<br>
+            <input type="checkbox" name="toppings" value="basil"> Basil<br>
+            <input type="checkbox" name="toppings" value="arugula"> Arugula<br>
+            <input type="checkbox" name="toppings" value="artichoke"> Artichoke<br>
+            <input type="checkbox" name="toppings" value="pineapple"> Pineapple<br>
+            <input type="checkbox" name="toppings" value="bell-pepper"> Bell Pepper<br>
+            <input type="checkbox" name="toppings" value="garlic"> Garlic<br>
+          </div>
+          <button type="submit" class="btn btn-danger">Calculate Price</button>
+        </form>
+      </div>
       <div class="output">
-        <h3>Your Pizza:</h3>
-        <p><strong>Size: </strong></p><span id="chosen-size"></span>
-        <p><strong>Toppings:</strong></p>
-        <ul id="chosen-toppings"></ul>
-        <p><strong>Price: $</strong></p><span id="price"></span>
+        <div class="card">
+          <h3>Your Pizza:</h3>
+          <p><strong>Size: </strong></p><span id="chosen-size"></span>
+          <p><strong>Toppings:</strong></p>
+          <ul id="chosen-toppings"></ul>
+          <p><strong>Price: $</strong></p><span id="price"></span>
+        </div>
       </div>
     </div>
   </body>
