@@ -1,4 +1,12 @@
 //FRONT END//
+function displayToppings(toppings) {
+  var toppingsHtml = "";
+  toppings.forEach(function(topping) {
+    toppingsHtml += "<li>" + topping + "</li>";
+  });
+  return toppingsHtml;
+}
+
 $(document).ready(function() {
   $("#order").submit(function(event) {
     event.preventDefault();
@@ -10,7 +18,7 @@ $(document).ready(function() {
     var customerPizza = new Pizza(size, toppings);
     var customerPrice = customerPizza.calcPrice();
     $("#chosen-size").text(customerPizza.size);
-    $("#chosen-toppings").text(customerPizza.toppings);
+    $("#chosen-toppings").append(displayToppings(customerPizza.toppings));
     $("#price").text(customerPrice);
     $("#orderCard").addClass("pizza")
     $(".output").show();
