@@ -13,14 +13,14 @@
       <form id="order">
         <label for="size">Select Your Pizza Size:</label>
         <select class="form-control" id="size">
-          <option>Personal</option>
-          <option>Small</option>
-          <option>Medium</option>
-          <option>Large</option>
-          <option>Extra Large</option>
+          <option>Personal ($5)</option>
+          <option>Small ($8)</option>
+          <option>Medium ($12)</option>
+          <option>Large ($16)</option>
+          <option>Extra Large ($20)</option>
         </select>
         <div class="form-group">
-          <p>Select Your Pizza Topping(s):</p>
+          <p>Select Your Toppings ($1 each):</p>
           <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni<br>
           <input type="checkbox" name="toppings" value="sausage"> Sausage<br>
           <input type="checkbox" name="toppings" value="chicken"> Chicken<br>
@@ -41,6 +41,13 @@
         </div>
         <button type="submit" class="btn btn-danger">Calculate Price</button>
       </form>
+      <div class="output">
+        <h3>Your Pizza:</h3>
+        <p><strong>Size: </strong></p><span id="chosen-size"></span>
+        <p><strong>Toppings:</strong></p>
+        <ul id="chosen-toppings"></ul>
+        <p><strong>Price: </strong></p><span id="price"></span>
+      </div>
     </div>
   </body>
 </html>
