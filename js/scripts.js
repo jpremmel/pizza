@@ -11,21 +11,30 @@ function displayToppings(toppings) {
   return toppingsHtml;
 }
 
+function additionalPizza(Pizza) {
+  var nextPizzaToppingsHtml = displayToppings(Pizza.toppings);
+  return nextPizzaHtml = "<div class=\"pizza card\"><h3>" + Pizza.size + " Pizza:</h3><p><strong>Toppings:</strong></p><ul>" + nextPizzaToppingsHtml + "</ul><p><strong>Price:</strong> $" + Pizza.price + "</p></div>";
+}
+
 $(document).ready(function() {
   $("#order").submit(function(event) {
     event.preventDefault();
     var size = $("#size").val();
-    toppings = [];
+    var toppings = [];
     $("input:checkbox[name=toppings]:checked").each(function(){
       toppings.push($(this).val());
     });
     var customerPizza = new Pizza(size, toppings);
     var customerPrice = customerPizza.calcPrice();
-    $("#chosen-size").text(customerPizza.size);
-    $("#chosen-toppings").append(displayToppings(customerPizza.toppings));
-    $("#price").text(customerPrice);
-    $("#orderCard").addClass("pizza")
-    $(".output").show();
+    if (!$("#chosen-toppings").text()) {
+      $("#chosen-size").text(customerPizza.size);
+      $("#chosen-toppings").append(displayToppings(customerPizza.toppings));
+      $("#price").text(customerPrice);
+      $("#orderCard").addClass("pizza")
+      $(".output").show();
+    } else {
+      $(".additionalPizza").append(additionalPizza(customerPizza));
+    }
   });
   $("#reset").click(function() {
     $("#order").trigger("reset");
