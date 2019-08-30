@@ -20,6 +20,8 @@ _This webpage calculates a fictional pizza order price based on the user's desig
 * _Clone this repository._
 * _Open the index.html file in a browser._
 
+_A live version of this project can be viewed at https://jpremmel.github.io/pizza/._
+
 ## Technologies Used
 
 _JavaScript, jQuery, CSS, Bootstrap, HTML_
