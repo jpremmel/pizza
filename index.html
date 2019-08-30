@@ -13,11 +13,11 @@
       <form id="order">
         <label for="size">Select Your Pizza Size:</label>
         <select class="form-control" id="size">
-          <option>Personal ($5)</option>
-          <option>Small ($8)</option>
-          <option>Medium ($12)</option>
-          <option>Large ($16)</option>
-          <option>Extra Large ($20)</option>
+          <option value="Personal">Personal ($5)</option>
+          <option value="Small">Small ($8)</option>
+          <option value="Medium">Medium ($12)</option>
+          <option value="Large">Large ($16)</option>
+          <option value="Extra Large">Extra Large ($20)</option>
         </select>
         <div class="form-group">
           <p>Select Your Toppings ($1 each):</p>
@@ -46,7 +46,7 @@
         <p><strong>Size: </strong></p><span id="chosen-size"></span>
         <p><strong>Toppings:</strong></p>
         <ul id="chosen-toppings"></ul>
-        <p><strong>Price: </strong></p><span id="price"></span>
+        <p><strong>Price: $</strong></p><span id="price"></span>
       </div>
     </div>
   </body>

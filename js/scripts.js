@@ -9,7 +9,12 @@ $(document).ready(function() {
       toppings.push($(this).val());
     });
     console.log(toppings);
-
+    var customerPizza = new Pizza(size, toppings);
+    var customerPrice = customerPizza.calcPrice();
+    $("#chosen-size").text(customerPizza.size);
+    $("#chosen-toppings").text(customerPizza.toppings);
+    $("#price").text(customerPrice);
+    $(".output").show();
   });
 
 });
@@ -21,18 +26,18 @@ function Pizza(size, toppings) {
 }
 
 Pizza.prototype.calcPrice = function() {
-  var price = 0;
+  this.price = 0;
   if (this.size === "Personal") {
-    price += 5;
+    this.price += 5;
   } else if (this.size === "Small") {
-    price += 8;
+    this.price += 8;
   } else if (this.size === "Medium") {
-    price += 12;
+    this.price += 12;
   } else if (this.size === "Large") {
-    price += 16;
+    this.price += 16;
   } else if (this.size === "Extra Large") {
-    price += 20;
+    this.price += 20;
   }
-  price += this.toppings.length;
-  return price;
+  this.price += this.toppings.length;
+  return this.price;
 }
