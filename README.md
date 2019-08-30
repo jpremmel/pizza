@@ -1,4 +1,4 @@
-# _Price Your Pizza_
+# _Weirdough Pizza_
 
 #### _A simulated pizza price calculator, 30 Aug 2019_
 

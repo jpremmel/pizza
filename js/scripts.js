@@ -1,4 +1,6 @@
 //FRONT END//
+var totalPrice = 0; //global variable
+
 function displayToppings(toppings) {
   var toppingsHtml = "";
   if (toppings.length) {
@@ -26,17 +28,21 @@ $(document).ready(function() {
     });
     var customerPizza = new Pizza(size, toppings);
     var customerPrice = customerPizza.calcPrice();
+    totalPrice += customerPrice;
     if (!$("#chosen-toppings").text()) {
       $("#chosen-size").text(customerPizza.size);
       $("#chosen-toppings").append(displayToppings(customerPizza.toppings));
       $("#price").text(customerPrice);
+      $("#total-price").text(totalPrice);
       $("#orderCard").addClass("pizza")
       $(".output").show();
     } else {
       $(".additionalPizza").append(additionalPizza(customerPizza));
+      $("#total-price").text(totalPrice);
     }
   });
   $("#reset").click(function() {
+    totalPrice = 0;
     $("#order").trigger("reset");
     $("#orderCard").removeClass("pizza");
     $("#chosen-toppings").text("");
